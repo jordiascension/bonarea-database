@@ -7,12 +7,18 @@ package com.bonarea.dao;
 
 import com.bonarea.model.Student;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  *
  * @author jordi
  */
 public interface StudentDao {
-    Student add(Student student)  throws SQLException, ClassNotFoundException;
-    Student getStudentById(Integer id);
+    Student add(Student student)  throws SQLException;
+    Student getStudentById(Integer id) throws SQLException;
+    List<Student> getAll() throws SQLException;
+    //returns the count of deleted records
+    Integer delete(Integer id) throws SQLException;
+    Integer deleteAll() throws SQLException;
+    Student update(Student student) throws SQLException;
 }

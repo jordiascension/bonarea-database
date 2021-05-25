@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Development</actionName>
+            <displayName>Development</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>package</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>Development</activatedProfile>
+            </activatedProfiles>
+        </action>
+        <action>
+            <actionName>CUSTOM-Production</actionName>
+            <displayName>Production</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>package</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>Production</activatedProfile>
+            </activatedProfiles>
+        </action>
+    </actions>
